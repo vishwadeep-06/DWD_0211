@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links Demo</title>
+  <style>
+    .output {
+      position: relative;
+      box-sizing: border-box;
+      width: 80%;
+      min-height: 655px;
+      margin: 0 auto;
+      padding: 30px 80px;
+      border: 1px solid #70d878;
+    }
+
+    #bottom {
+      position: absolute;
+      left: 80px;
+      bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="output" id="top">
+    <p>Links demo</p>
+
+    <a href="https://www.example.com" target="_blank" rel="noopener">External link</a><br>
+    <a href="#bottom">Jump to bottom</a><br>
+    <a href="@abes.ac.in">Email us</a><br>
+    <a href="#top">
+      <img src="https://universitykart.b-cdn.net/Content/upload/admin/witkmh24.rj3.jpg." alt="Logo" width="145" height="72">
+    </a>
+
+    <p id="bottom">
+      Bottom. <a href="#top">Back to top</a>
+    </p>
+  </div>
+</body>
+</html>

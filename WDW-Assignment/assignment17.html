@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    form {
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input {
+      padding: 8px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="regForm">
+    <input type="text" name="fullname" placeholder="Full name" required>
+    
+    <input type="email" name="email" placeholder="you@college.edu" required>
+    
+    <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required>
+    
+    <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+    
+    <input type="number" name="age" placeholder="Age" min="1" required>
+    
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>

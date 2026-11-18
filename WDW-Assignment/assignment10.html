@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Demo</title>
+  <style>
+    .output {
+      width: 80%;
+      min-height: 800px;
+      margin: 0 auto;
+      padding: 20px 150px;
+      border: 1px solid #70d878;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+
+    video {
+      display: block;
+      width: 235px;
+      height: 24px;
+      margin-top: 110px;
+    }
+
+    audio {
+      display: block;
+      width: 180px;
+    }
+
+    iframe {
+      width: 380px;
+      height: 215px;
+    }
+  </style>
+</head>
+<body>
+  <div class="output">
+    <h3>Image</h3>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.YRLnFB2_z8EqsilbfSMoQAHaD9?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="College campus">
+
+    <h3>Video</h3>
+    <video controls>
+      <source src="https://www.youtube.com/shorts/wgof4BaE3AA" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="college-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>YouTube</h3>
+    <iframe
+      src="https://www.youtube.com/shorts/wgof4BaE3AA
+      title="YouTube video"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
